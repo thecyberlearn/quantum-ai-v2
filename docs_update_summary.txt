@@ -1,20 +1,24 @@
 === Documentation Auto-Update Summary ===
-Update Date: 2025-08-01 09:00:46
+Update Date: 2025-08-01 09:19:23
 
 Recent Commits:
+  - 2d670d7 🏠 Create restoration point system with agent freeze
   - f6970b6 🎨 Complete Phase 1 UI optimization with button hover fixes
   - 277e7ec 📄 Auto-update documentation timestamp after security fixes
-  - c8ad34f 🔒 Implement critical security fixes for production readiness
 
 Agents Changes:
-  - agents/templates/agents/agent_detail.html
-  - agents/templates/agents/marketplace.html
-  - static/css/agent-base.css
-  - static/css/agent-detail.css
+  - agents/admin.py
+  - agents/management/commands/freeze_agents.py
+  - agents/management/commands/restore_working_state.py
+  - agents/migrations/0002_agent_is_locked.py
+  - agents/models.py
+
+Documentation Changes:
+  - CLAUDE.md
+  - backups/README.md
 
 Frontend Changes:
-  - static/css/base.css
-  - static/css/marketplace.css
+  - backups/restore_users_wallet.json
 
 Backend Changes:
   - docs_update_summary.txt
