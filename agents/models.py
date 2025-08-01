@@ -27,6 +27,7 @@ class Agent(models.Model):
     form_schema = models.JSONField(help_text="JSON schema for agent input form")
     webhook_url = models.URLField(help_text="n8n webhook URL for execution")
     is_active = models.BooleanField(default=True)
+    is_locked = models.BooleanField(default=False, help_text="Lock agent to prevent modifications")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
